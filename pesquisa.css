@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+}
+
+.logo{
+    justify-content: left;
+    width: 150px;
+    height: 1em;
+}
+
+h1{
+    color: #75151d;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+}
+
+h2{
+    font-weight: bold;
+    margin: 10px;
+}
+
+.cor1{
+    background-color: #75151d; 
+}
+
+.imgC{
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    max-width: 68.75em;
+    display: block;
+}
+
+.img-fluid{
+    width: 100%;
+    height: 28.125em;
+    margin: auto;
+    max-width: 18.75em;
+    justify-content: center;
+}
+
+#texto, p{  
+    margin: 1em;
+    color:white;
+    font-weight: bold;
+    border: solid #75151d 4px;  
+    text-align: center;
+}
+
+a img{
+    max-width: 100%;
+}
+
+a{
+    display: block;
+    margin: 10px;
+    position: relative;
+}
+
+.detalhes:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: all .5s;
+}
+
+.detalhes:hover:before{
+    background: rgba(0,0,0,.5);
+}
+
+.detalhes:after{
+    opacity: 0;
+}
+
+.detalhes:hover:after{
+    content: 'Ver Detalhes';
+    display: block;
+    position: absolute;
+    border: 3px solid #75151d;
+    color: white;
+    top: 50%;
+    left: 50%;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.rodape{
+    background-color: #75151d; 
+    padding: 25px;
+    font-size: 15px;
+    color: #6f8597;
+    letter-spacing: 3px;
+    text-align: center;
+}
